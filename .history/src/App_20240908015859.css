@@ -1,0 +1,103 @@
+/* Обнуление базовых стилей браузера для кроссбраузерной совместимости */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Основной контейнер приложения */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9; /* Светлый фон для контейнера */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Лёгкая тень для объёма */
+  font-family: 'Arial', sans-serif; /* Простая и нейтральная типографика */
+  text-align: center; /* Выравнивание контента по центру */
+}
+
+/* Заголовки */
+h1 {
+  font-size: 2.5rem;
+  color: #1e90ff; /* Пастельный синий */
+  margin-bottom: 20px;
+}
+
+h2, h3 {
+  font-size: 1.5rem;
+  color: #333; /* Тёмный нейтральный для заголовков */
+  margin-bottom: 10px;
+}
+
+/* Общие стили для формы и списка */
+form, ul {
+  margin-bottom: 20px;
+}
+
+/* Стили для input */
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+/* Стили для кнопок */
+button {
+  background-color: #1e90ff; /* Синий пастельный цвет */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Анимация при наведении на кнопки */
+button:hover {
+  background-color: #ffa07a; /* Оранжевый пастельный при наведении */
+  transform: scale(1.05);
+}
+
+/* Список упражнений */
+ul {
+  list-style: none; /* Убираем маркеры списка */
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd; /* Линия-разделитель между элементами */
+  font-size: 1.2rem;
+}
+
+/* Стиль для сообщения таймера */
+p {
+  font-size: 1rem;
+  color: #ff4500; /* Оранжевый пастельный для сообщения */
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2, h3 {
+    font-size: 1.2rem;
+  }
+
+  button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

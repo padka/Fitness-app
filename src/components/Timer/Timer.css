@@ -1,0 +1,68 @@
+/* Основные стили для таймера */
+.timer-container {
+    background-color: #f0f8ff; /* Очень светлый голубой фон */
+    border-radius: 20px; /* Закруглённые углы */
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Лёгкая тень */
+  }
+  
+  .timer-container h3 {
+    font-size: 2rem;
+    color: #1e90ff; /* Синий пастельный цвет */
+    margin-bottom: 20px;
+  }
+  
+  .timer-container p {
+    font-size: 1.2rem;
+    color: #ff4500; /* Оранжевый пастельный для сообщений */
+  }
+  
+  /* Стили для кнопок */
+  .timer-container button {
+    background-color: #1e90ff; /* Синий пастельный цвет */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 10px; /* Закругленные края кнопок */
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Анимация при наведении */
+  }
+  
+  /* Анимация при наведении на кнопки */
+  .timer-container button:hover {
+    background-color: #ffa07a; /* Оранжевый пастельный при наведении */
+    transform: scale(1.05); /* Лёгкое увеличение */
+  }
+  
+  /* Стиль для кнопки сброса */
+  .timer-container button:nth-child(3) {
+    background-color: #87ceeb; /* Голубой цвет */
+  }
+  
+  .timer-container button:nth-child(3):hover {
+    background-color: #ffb6c1; /* Лёгкий розовый при наведении */
+  }
+  
+  /* Стили для анимаций таймера */
+  .timer-container .active-timer {
+    color: #32cd32; /* Зелёный цвет, если таймер активен */
+    animation: pulse 1s infinite; /* Пульсация текста таймера */
+  }
+  
+  /* Анимация пульсации для активного таймера */
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }

@@ -1,0 +1,42 @@
+.container{
+  text-align: center;
+  font-size: medium;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 20px;
+}
+.button{
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #ecf806;
+  color:blue;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.special-message{
+  color:red;
+  font-weight: bold;
+  opacity: 0 ;  
+  animation: fadeIn 1s forwards;
+}
+/* Анимации для плавного появления */
+@keyframes fadeIn{
+  from {
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+/* Анимации для плавного изчезновения */
+.reset-message{
+  opacity: 1;
+  animation: fadeIn 2s forwards;
+}
+@keyframes fadeIn{
+  from {
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+  }
+}

@@ -1,0 +1,18 @@
+.container{
+  text-align: center;
+  font-size: medium;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 20px;
+}
+.button{
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #ecf806;
+  color:blue;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.special-message{
+  color:red;
+  font-weight: bold;
+}
