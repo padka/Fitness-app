@@ -1,0 +1,38 @@
+.nav-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+
+.nav-icon-container {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #f0f0f0; /* Светлый фон для иконки */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень для иконки */
+    transition: background-color 0.3s ease;
+}
+
+.nav-icon-container:hover {
+    background-color: #e0e0e0; /* Цвет при наведении */
+}
+
+.nav-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-icon {
+    font-size: 24px; /* Размер иконки */
+    color: #333; /* Цвет иконки */
+}
