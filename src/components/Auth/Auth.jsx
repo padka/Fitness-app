@@ -3,7 +3,7 @@ import {AuthContext} from "./AuthContext"
 
 
 export default function({onLogin}) {
-    const {login} = useContext(AuthContext); // Доставем функцию из контекста
+    const {login} = useContext(AuthContext); // Достаем функцию из контекста
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
@@ -14,7 +14,7 @@ export default function({onLogin}) {
         setLoading(true); // Показываем загрузку
 
         try {
-            const response = await fetch('http://localhost:3000/login', {
+            const response = await fetch('', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
