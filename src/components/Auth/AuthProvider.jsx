@@ -1,5 +1,5 @@
 import React from'react';
-import {AuthProvider} from '../AuthContext';
+import {AuthProvider} from './AuthContext.jsx';
 import Auth from './Auth.jsx';
 import Workouts from '../WorkoutForm/WorkoutForm.jsx';
 
